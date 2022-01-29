@@ -1,0 +1,30 @@
+{
+  "name": "unminify",
+  "version": "1.0.0",
+  "description": "Unminify stacktraces with sourcemaps",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Ridgewell <justin@ridgewell.name>",
+  "license": "MIT",
+  "build": {
+    "appId": "name.ridgewell.unminify",
+    "mac": {
+      "category": "utilities"
+    }
+  },
+  "devDependencies": {
+    "electron": "16.0.7",
+    "electron-builder": "22.14.5",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "@jridgewell/trace-mapping": "^0.2.1",
+    "promise-props": "1.0.0",
+    "source-map-url": "0.4.1"
+  }
+}
